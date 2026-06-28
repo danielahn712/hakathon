@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Squire &mdash; Search</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="app">
+    <header class="app-header">
+      <a href="index.html" class="back-link" aria-label="Back to home">←</a>
+      <div class="app-brand">
+        <span class="app-name">Squire</span>
+      </div>
+      <span class="app-subtitle">Search how to do anything</span>
+    </header>
+
+    <main class="search-main">
+      <form id="search-form" class="search-form">
+        <input
+          id="search-input"
+          class="search-input"
+          type="text"
+          placeholder="How do I... shave? change a tire?"
+          autocomplete="off"
+          autofocus
+        />
+        <button type="submit" class="search-btn" aria-label="Search">🔍</button>
+      </form>
+
+      <p class="search-hint">Or try one of these:</p>
+      <div id="chips" class="chips chips-wrap"></div>
+    </main>
+  </div>
+
+  <script src="knowledge.js"></script>
+  <script src="match.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>
